@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A Train Station</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="loading-overlay">
+        <div class="spinner"></div>
+        <div class="loading-text">Loading Train Station...</div>
+        <div id="loading-progress" class="loading-progress">0%</div>
+      </div>
+
+      <div id="info-hud">
+        <div class="hud-title-card">
+          <h1>🚉 A Train Station</h1>
+          <div class="sub-title">Interactive 3D Experience</div>
+        </div>
+        <div class="hud-controls-card">
+          <div class="control-item">
+            <span class="badge">Keyboard</span>
+            <span>WASD / Arrows to move camera around station</span>
+          </div>
+          <div class="control-item">
+            <span class="badge">Mouse</span>
+            <span>Click anywhere to toggle train lights on/off</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="status-badge">
+        <div id="light-dot" class="status-dot"></div>
+        <span id="light-status-text">Train Light: ON</span>
+        <span class="status-divider">•</span>
+        <span id="train-status-text">Train: Arriving...</span>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
