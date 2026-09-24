@@ -172,7 +172,7 @@ def create_report():
     
     story.append(Paragraph("Section: 7", meta_style))
     story.append(Paragraph("Group No.: 09", meta_style))
-    story.append(Paragraph("Assigned Project No.: 05", meta_style))
+    story.append(Paragraph("Assigned Project No.: 20", meta_style))
     story.append(Spacer(1, 45))
     
     # Submitted By Table
